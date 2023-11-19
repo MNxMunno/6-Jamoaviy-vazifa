@@ -1,0 +1,81 @@
+.ibrohim-privacy {
+  position: relative;
+  top: 108px;
+}
+.hh {
+  position: relative;
+  //   left: 280px;
+  margin-left: 280px;
+  width: 752px;
+  color: #1d3444;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px; /* 112.5% */
+  letter-spacing: -1.92px;
+}
+.p {
+  color: #5b5b5b;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  position: relative;
+  top: 24px;
+  //   left: 280px;
+  margin-left: 280px;
+}
+.p1 {
+  width: 752px;
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  //   left: 280px;
+  position: relative;
+  top: 48px;
+  margin-left: 280px;
+}
+.p1:hover {
+  background-color: #e1dede;
+  transition: 0.7s;
+  box-shadow: rgb(197, 193, 193) 5px 5px 4px;
+}
+.hh1 {
+  width: 752px;
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.72px;
+  position: relative;
+  top: 70px;
+  //   left: 280px;
+  margin-left: 280px;
+}
+
+@media only screen and (max-width: 900px) {
+  section {
+    position: relative;
+    right: 140px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  section {
+    position: relative;
+    right: 250px;
+  }
+}
+@media only screen and (max-width: 790px) {
+  section {
+    position: relative;
+    left: -280px;
+  }
+}
