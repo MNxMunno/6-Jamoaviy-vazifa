@@ -1,0 +1,93 @@
+@use "../themes/" as *;
+.Home----home {
+  background: #dceaf5;
+  .home___hero {
+    padding-top: 25px;
+
+    .cards {
+      padding-top: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      .home-hero-img {
+        // max-width: 712px;
+        img {
+          width: 100%;
+          margin-bottom: -130px;
+        }
+      }
+      .text-card {
+        max-width: 576px;
+        padding: 32px 0 147px;
+
+        h1 {
+          color: #1d3444;
+
+          /* H1 Heading */
+          font-family: Poppins;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 72px; /* 112.5% */
+          letter-spacing: -1.92px;
+        }
+
+        .home-text {
+          padding-top: 12px;
+          padding-bottom: 32px;
+          color: #5b5b5b;
+          font-family: Poppins;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; /* 166.667% */
+        }
+
+        p {
+          color: rgba(57, 65, 73, 0.5);
+          font-family: Poppins;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; /* 166.667% */
+        }
+
+        .hero-btn {
+          padding-bottom: 56px;
+          a {
+            border-radius: 27px;
+            color: #1d3444;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 106.5%; /* 17.04px */
+            text-transform: capitalize;
+            transition: 0.5s;
+            padding: 18px 32px;
+            &:hover {
+              background: #f58a07;
+              color: #fff;
+            }
+          }
+        }
+
+        .logos {
+          padding-top: 18px;
+          display: flex;
+          gap: 45px;
+          svg {
+            cursor: pointer;
+            fill: #4a5d69;
+            transition: 0.4s;
+            &:hover {
+              fill: #2c3840;
+            }
+          }
+        }
+      }
+    }
+  }
+}
