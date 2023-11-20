@@ -1,4 +1,9 @@
 @use "../themes/" as *;
+
+a {
+  text-decoration: none;
+}
+
 .Home----home {
   background: #dceaf5;
   .home___hero {
