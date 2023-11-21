@@ -2924,17 +2924,7 @@ iframe {
   transition: 0.5s;
 }
 
-.ibrohim-privacy .hh {
-  color: #1d3444;
-  font-family: Poppins;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 72px; /* 112.5% */
-  letter-spacing: -1.92px;
-  padding: 80px 0 24px;
-}
-.ibrohim-privacy p {
+.ibrohim-privacy-police p {
   color: #5b5b5b;
   font-family: Poppins;
   font-size: 16px;
@@ -2943,10 +2933,10 @@ iframe {
   line-height: 28px; /* 175% */
   padding-bottom: 48px;
 }
-.ibrohim-privacy .p1 {
+.ibrohim-privacy-police .p1 {
   padding-bottom: 24px;
 }
-.ibrohim-privacy .hh1 {
+.ibrohim-privacy-police .hh1 {
   color: #0d1317;
   font-family: Poppins;
   font-size: 24px;
@@ -2955,6 +2945,11 @@ iframe {
   line-height: 30px; /* 125% */
   letter-spacing: -0.72px;
   padding: 40px 0 24px;
+}
+@media only screen and (max-width: 450px) {
+  .ibrohim-privacy-police h1 {
+    font-size: 24px;
+  }
 }
 
 * {
