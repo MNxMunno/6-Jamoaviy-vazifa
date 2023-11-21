@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @font-face {
   font-family: Poppins;
@@ -583,12 +584,15 @@ a {
 }
 .Home----home .energy {
   padding-top: 100px;
+  background-color: #fff;
+  padding: 96px 0 128px;
 }
 .Home----home .energy .cards {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 47px;
+  padding-bottom: 85px;
 }
 .Home----home .energy .cards .texts {
   max-width: 618px;
@@ -612,43 +616,41 @@ a {
   line-height: 30px; /* 166.667% */
   padding: 24px 0;
 }
-.Home----home .energy .cards .texts button {
+.Home----home .energy .cards .texts .card-texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+.Home----home .energy .cards .texts .card-texts .card {
+  width: 264px;
+}
+.Home----home .energy .cards .texts .card-texts .card .title {
+  color: #f58a07;
+  font-family: "Inter";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 138.889% */
+}
+.Home----home .energy .cards .texts .card-texts .card h6 {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106.5%; /* 25.56px */
+  letter-spacing: -0.72px;
+  padding-top: 16px;
+}
+.Home----home .energy .cards .texts .card-texts .card p {
   color: #5b5b5b;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 106.5%; /* 17.04px */
-  text-transform: capitalize;
-  border-radius: 27px;
-  background: transparent;
-  padding: 19px 32px;
-  border: 2px solid #f58a07;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-.Home----home .energy .cards .texts button a {
-  text-decoration: none;
-  color: #5b5b5b;
-}
-.Home----home .energy .cards .texts button span {
-  height: 100%;
-  width: 0;
-  background-color: #f58a07;
-  border-radius: 27px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: 0.5s;
-}
-.Home----home .energy .cards .texts button:hover {
-  border: 2px solid transparent;
-}
-.Home----home .energy .cards .texts button:hover span {
-  width: 100%;
-  visibility: visible;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
 }
 .Home----home .energy .cards .hero-image {
   position: relative;
@@ -676,6 +678,95 @@ a {
 }
 .Home----home .energy .cards .hero-image .gril {
   width: 100%;
+}
+.Home----home .energy .business {
+  position: relative;
+  border-radius: 20px;
+  background: #edf7ff;
+  padding: 48px;
+}
+.Home----home .energy .business .content .cont-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.Home----home .energy .business .content .cont-links .links {
+  border-radius: 31px;
+  border: 1px solid #a8bccc;
+  padding: 8px 24px;
+  color: rgba(6, 50, 85, 0.3);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+.Home----home .energy .business .content .cont-links .links:hover {
+  background-color: #fff;
+  color: #f58a07;
+  border: 1px solid #fff;
+}
+.Home----home .energy .business .content .cards {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.Home----home .energy .business .content .cards .card h6 {
+  max-width: 572px;
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -1.44px;
+  padding-top: 80px;
+}
+.Home----home .energy .business .content .cards .card p {
+  max-width: 572px;
+  padding: 25px 0 40px;
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+}
+.Home----home .energy .business .content .cards .card a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #f58a07;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 106.5%; /* 17.04px */
+  transition: 0.5s;
+}
+.Home----home .energy .business .content .cards .card a svg {
+  fill: #f58a07;
+  transition: 0.5s;
+}
+.Home----home .energy .business .content .cards .card a:hover {
+  color: #ffd343;
+}
+.Home----home .energy .business .content .cards .card a:hover svg {
+  fill: #ffd343;
+}
+.Home----home .energy .business .content .cards .hero-image {
+  margin-top: 80px;
+  width: 472px;
+  height: 466px;
+}
+.Home----home .energy .business .ribbon {
+  position: absolute;
+  z-index: 50;
+  top: -16px;
+  right: -16px;
 }
 .Home----home .latest .latest-content {
   padding-top: 96px;
@@ -790,6 +881,24 @@ a {
   .Home----home .sector .sector-content h2 {
     font-size: 32px;
     line-height: 46px;
+  }
+  .Home----home .energy {
+    padding-top: 50px;
+  }
+  .Home----home .energy .cards .texts h5 {
+    font-size: 32px;
+  }
+  .Home----home .energy .cards .texts .card-texts {
+    justify-content: center;
+    gap: 32px;
+  }
+  .Home----home .energy .business .content .cont-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .Home----home .energy .business .content .cards .card h6 {
+    font-size: 28px;
+    line-height: 40px;
   }
   .Home----home .latest .latest-content h6 {
     font-size: 32px;
