@@ -191,12 +191,14 @@ a {
   }
   .building {
     padding: 96px 0;
-    background-color: #f58a07;
+    // background-color: #cf4a4a;
     .cards1 {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: 40px;
+      padding-bottom: 64px;
+      flex-wrap: wrap;
       h3 {
         max-width: 619px;
         color: #0d1317;
@@ -215,6 +217,169 @@ a {
         font-style: normal;
         font-weight: 500;
         line-height: 30px; /* 166.667% */
+      }
+    }
+    .cards2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      .card {
+        background-color: #fff;
+        width: 401px;
+        padding: 48px 26px 37px 39px;
+        border-radius: 20px;
+        transition: 0.4s;
+        box-shadow: 0.1px 0.5px 10px rgba(0, 0, 0, 0.19);
+        h4 {
+          color: #0d1317;
+          font-family: Poppins;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 106.5%; /* 25.56px */
+          letter-spacing: -0.72px;
+          padding: 32px 0 16px;
+        }
+        p {
+          color: #5b5b5b;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px; /* 175% */
+        }
+        svg {
+          fill: #f58a07;
+        }
+        #love {
+          stroke: #f58a07;
+        }
+        &:hover {
+          box-shadow: 1px 10px 15px rgba(57, 65, 73, 0.5);
+        }
+        &:hover h4 {
+          color: #4b5e6c;
+        }
+        &:hover p {
+          color: #5b1c1c;
+        }
+        &:hover svg {
+          fill: #cc7306;
+        }
+        &:hover #love {
+          stroke: #e47f05;
+        }
+      }
+    }
+  }
+  .energy {
+    padding-top: 100px;
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // flex-wrap: wrap;
+      gap: 47px;
+      .texts {
+        max-width: 618px;
+        h5 {
+          max-width: 618px;
+          color: #0d1317;
+          font-family: Poppins;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 56px; /* 116.667% */
+          letter-spacing: -1.44px;
+        }
+        p {
+          color: #5b5b5b;
+          font-family: Poppins;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; /* 166.667% */
+          padding: 24px 0;
+        }
+
+        button {
+          color: #5b5b5b;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 106.5%; /* 17.04px */
+          text-transform: capitalize;
+          border-radius: 27px;
+          background: transparent;
+          padding: 19px 32px;
+          border: 2px solid #f58a07;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          a {
+            text-decoration: none;
+            color: #5b5b5b;
+          }
+          span {
+            height: 100%;
+            width: 0;
+            background-color: #f58a07;
+            border-radius: 27px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+          }
+          &:hover {
+            border: 2px solid transparent;
+            span {
+              width: 100%;
+              visibility: visible;
+            }
+          }
+        }
+      }
+
+      .hero-image {
+        position: relative;
+        max-width: 637px;
+
+        border-radius: 30px;
+        overflow: hidden !important;
+        &:hover {
+          .yellow {
+            width: 30%;
+            transition: 0.5s;
+          }
+        }
+
+        .yellow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 22px 0px 0px 20px;
+          background: #f58a07;
+          mix-blend-mode: multiply;
+          width: 0;
+          height: inherit;
+          left: 0;
+          bottom: 0;
+          transition: 0.5s;
+          overflow: hidden;
+          // z-index: 1;
+        }
+        .gril {
+          width: 100%;
+        }
+        // .lenta {
+        //   // position: absolute;
+
+        //   z-index: 10;
+        // }
       }
     }
   }
@@ -295,6 +460,7 @@ a {
       }
     }
   }
+
   @media only screen and (max-width: 1137px) {
     .home___hero {
       .cards {
@@ -306,6 +472,20 @@ a {
         .home-hero-img {
           width: 650px;
         }
+      }
+    }
+    .building {
+      .cards2 {
+        justify-content: center;
+
+        gap: 32px;
+      }
+    }
+    .energy {
+      .cards {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
       }
     }
   }

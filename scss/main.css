@@ -499,13 +499,14 @@ a {
 }
 .Home----home .building {
   padding: 96px 0;
-  background-color: #f58a07;
 }
 .Home----home .building .cards1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 40px;
+  padding-bottom: 64px;
+  flex-wrap: wrap;
 }
 .Home----home .building .cards1 h3 {
   max-width: 619px;
@@ -525,6 +526,156 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 30px; /* 166.667% */
+}
+.Home----home .building .cards2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.Home----home .building .cards2 .card {
+  background-color: #fff;
+  width: 401px;
+  padding: 48px 26px 37px 39px;
+  border-radius: 20px;
+  transition: 0.4s;
+  box-shadow: 0.1px 0.5px 10px rgba(0, 0, 0, 0.19);
+}
+.Home----home .building .cards2 .card h4 {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106.5%; /* 25.56px */
+  letter-spacing: -0.72px;
+  padding: 32px 0 16px;
+}
+.Home----home .building .cards2 .card p {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+.Home----home .building .cards2 .card svg {
+  fill: #f58a07;
+}
+.Home----home .building .cards2 .card #love {
+  stroke: #f58a07;
+}
+.Home----home .building .cards2 .card:hover {
+  box-shadow: 1px 10px 15px rgba(57, 65, 73, 0.5);
+}
+.Home----home .building .cards2 .card:hover h4 {
+  color: #4b5e6c;
+}
+.Home----home .building .cards2 .card:hover p {
+  color: #5b1c1c;
+}
+.Home----home .building .cards2 .card:hover svg {
+  fill: #cc7306;
+}
+.Home----home .building .cards2 .card:hover #love {
+  stroke: #e47f05;
+}
+.Home----home .energy {
+  padding-top: 100px;
+}
+.Home----home .energy .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 47px;
+}
+.Home----home .energy .cards .texts {
+  max-width: 618px;
+}
+.Home----home .energy .cards .texts h5 {
+  max-width: 618px;
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -1.44px;
+}
+.Home----home .energy .cards .texts p {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+  padding: 24px 0;
+}
+.Home----home .energy .cards .texts button {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106.5%; /* 17.04px */
+  text-transform: capitalize;
+  border-radius: 27px;
+  background: transparent;
+  padding: 19px 32px;
+  border: 2px solid #f58a07;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.Home----home .energy .cards .texts button a {
+  text-decoration: none;
+  color: #5b5b5b;
+}
+.Home----home .energy .cards .texts button span {
+  height: 100%;
+  width: 0;
+  background-color: #f58a07;
+  border-radius: 27px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.Home----home .energy .cards .texts button:hover {
+  border: 2px solid transparent;
+}
+.Home----home .energy .cards .texts button:hover span {
+  width: 100%;
+  visibility: visible;
+}
+.Home----home .energy .cards .hero-image {
+  position: relative;
+  max-width: 637px;
+  border-radius: 30px;
+  overflow: hidden !important;
+}
+.Home----home .energy .cards .hero-image:hover .yellow {
+  width: 30%;
+  transition: 0.5s;
+}
+.Home----home .energy .cards .hero-image .yellow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 22px 0px 0px 20px;
+  background: #f58a07;
+  mix-blend-mode: multiply;
+  width: 0;
+  height: inherit;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.Home----home .energy .cards .hero-image .gril {
+  width: 100%;
 }
 .Home----home .latest .latest-content {
   padding-top: 96px;
@@ -608,6 +759,15 @@ a {
   }
   .Home----home .home___hero .cards .home-hero-img {
     width: 650px;
+  }
+  .Home----home .building .cards2 {
+    justify-content: center;
+    gap: 32px;
+  }
+  .Home----home .energy .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 }
 @media only screen and (max-width: 888px) {
@@ -1937,6 +2097,158 @@ a {
   transition: 0.5s;
 }
 
+.ibrohim-contact {
+  position: relative;
+  top: 108px;
+  margin-left: 100px;
+}
+
+.first {
+  display: flex;
+  position: relative;
+}
+
+.third {
+  position: relative;
+  top: 20px;
+  left: 180px;
+}
+
+.fourth {
+  position: relative;
+  margin-left: 240px;
+  top: 20px;
+}
+
+.hh {
+  width: 501px;
+  color: #1d3444;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: -1.44px;
+}
+
+.p {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+}
+
+.p1 {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.72px;
+}
+
+.inn {
+  position: relative;
+  left: -20px;
+}
+
+input {
+  padding-left: 40px;
+  padding-top: -84px !important;
+  margin-top: 32px;
+  resize: none;
+  width: 605px;
+  height: 54px;
+  flex-shrink: 0;
+  border: none;
+  border-style: none;
+  background: #f9f9ff;
+  outline: none;
+  border-radius: 27px;
+  background: rgba(210, 218, 237, 0.17);
+}
+
+input:hover {
+  background-color: #c0bcbc;
+  transition: 0.7s;
+  color: white;
+}
+
+.inp {
+  width: 605px;
+  height: 160px;
+  flex-shrink: 0;
+  padding-left: 40px;
+  padding-top: -84px !important;
+  margin-top: 32px;
+  resize: none;
+  border: none;
+  border-style: none;
+  background: #f9f9ff;
+  outline: none;
+  border-radius: 27px;
+  background: rgba(210, 218, 237, 0.17);
+}
+
+.obshi {
+  display: flex;
+}
+
+iframe {
+  position: relative;
+  left: 50px;
+  top: 35px;
+  border-radius: 20px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ibrohim-contact iframe {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .ifr {
+    width: 500px;
+  }
+  .third {
+    position: relative;
+    left: 105px;
+  }
+  .fourth {
+    position: relative;
+    left: -130px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .ifr {
+    position: relative;
+    top: 700px;
+    left: -470px;
+    width: 100%;
+  }
+  .third {
+    position: relative;
+    top: 730px;
+    left: -470px;
+  }
+  .fourth {
+    position: relative;
+    top: 730px;
+    left: -550px;
+  }
+  .ibrohim-contact {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ibrohim-contact {
+    position: relative;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -2503,6 +2815,87 @@ a {
   transition: 0.5s;
 }
 
+.ibrohim-privacy {
+  position: relative;
+  top: 108px;
+}
+
+.hh {
+  position: relative;
+  margin-left: 280px;
+  width: 752px;
+  color: #1d3444;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px; /* 112.5% */
+  letter-spacing: -1.92px;
+}
+
+.p {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  position: relative;
+  top: 24px;
+  margin-left: 280px;
+}
+
+.p1 {
+  width: 752px;
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  position: relative;
+  top: 48px;
+  margin-left: 280px;
+}
+
+.p1:hover {
+  background-color: #e1dede;
+  transition: 0.7s;
+  box-shadow: rgb(197, 193, 193) 5px 5px 4px;
+}
+
+.hh1 {
+  width: 752px;
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.72px;
+  position: relative;
+  top: 70px;
+  margin-left: 280px;
+}
+
+@media only screen and (max-width: 900px) {
+  .ibrohim-privacy {
+    position: relative;
+    right: 140px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .ibrohim-privacy {
+    position: relative;
+    right: 250px;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .ibrohim-privacy {
+    position: relative;
+    left: -280px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
