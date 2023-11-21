@@ -337,11 +337,12 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  flex-wrap: wrap;
+}
+.Home----home .home___hero .cards .home-hero-img {
+  width: 672px;
 }
 .Home----home .home___hero .cards .home-hero-img img {
   width: 100%;
-  margin-bottom: -130px;
 }
 .Home----home .home___hero .cards .text-card {
   max-width: 576px;
@@ -377,6 +378,10 @@ a {
 }
 .Home----home .home___hero .cards .text-card .hero-btn {
   padding-bottom: 56px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 .Home----home .home___hero .cards .text-card .hero-btn a {
   border-radius: 27px;
@@ -397,7 +402,9 @@ a {
 .Home----home .home___hero .cards .text-card .logos {
   padding-top: 18px;
   display: flex;
+  align-items: center;
   gap: 45px;
+  flex-wrap: wrap;
 }
 .Home----home .home___hero .cards .text-card .logos svg {
   cursor: pointer;
@@ -406,6 +413,227 @@ a {
 }
 .Home----home .home___hero .cards .text-card .logos svg:hover {
   fill: #2c3840;
+}
+.Home----home .sector {
+  background-color: #fff;
+  padding: 96px 0;
+}
+.Home----home .sector .sector-content h2 {
+  max-width: 735px;
+  color: #1d3444;
+  /* H2 Heading */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -1.44px;
+}
+.Home----home .sector .sector-content p {
+  max-width: 735px;
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+  padding: 27px 0 64px;
+}
+.Home----home .sector .sector-content .cards {
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.Home----home .sector .sector-content .cards .card {
+  background-color: #fff;
+  border-radius: 20px;
+  background: #fff;
+}
+.Home----home .sector .sector-content .cards .card img {
+  width: 100%;
+}
+.Home----home .sector .sector-content .cards .card .card-texts {
+  max-width: 340px;
+  padding: 32px 0px 32px 32px;
+}
+.Home----home .sector .sector-content .cards .card .card-texts h4 {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 36px; /* 150% */
+  letter-spacing: -0.72px;
+  padding-bottom: 16px;
+}
+.Home----home .sector .sector-content .cards .card .card-texts p {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  padding-bottom: 24px;
+}
+.Home----home .sector .sector-content .cards .card .card-texts a {
+  color: #f58a07;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 106.5%; /* 17.04px */
+  text-decoration: none;
+}
+.Home----home .sector .sector-content .cards .card .card-texts a:hover {
+  color: #feb863;
+  transition: 0.3s;
+}
+.Home----home .sector .sector-content .cards .card .card-texts a:hover svg path {
+  fill: #feb863;
+}
+.Home----home .sector .sector-content .cards .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.3s;
+}
+.Home----home .building {
+  padding: 96px 0;
+  background-color: #f58a07;
+}
+.Home----home .building .cards1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.Home----home .building .cards1 h3 {
+  max-width: 619px;
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -1.08px;
+}
+.Home----home .building .cards1 p {
+  max-width: 620px;
+  color: #1d3444;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+}
+.Home----home .latest .latest-content {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.Home----home .latest .latest-content h6 {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -1.44px;
+  text-transform: capitalize;
+}
+.Home----home .latest .latest-content .cards {
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.Home----home .latest .latest-content .cards .card {
+  background-color: #fff;
+  border-radius: 20px;
+  background: #fff;
+}
+.Home----home .latest .latest-content .cards .card img {
+  width: 100%;
+}
+.Home----home .latest .latest-content .cards .card .card-texts {
+  max-width: 340px;
+  padding: 32px 0px 32px 32px;
+}
+.Home----home .latest .latest-content .cards .card .card-texts h4 {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 36px; /* 150% */
+  letter-spacing: -0.72px;
+  padding-bottom: 16px;
+}
+.Home----home .latest .latest-content .cards .card .card-texts p {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  padding-bottom: 24px;
+}
+.Home----home .latest .latest-content .cards .card .card-texts a {
+  color: #f58a07;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 106.5%; /* 17.04px */
+  text-decoration: none;
+}
+.Home----home .latest .latest-content .cards .card .card-texts a:hover {
+  color: #feb863;
+  transition: 0.3s;
+}
+.Home----home .latest .latest-content .cards .card .card-texts a:hover svg path {
+  fill: #feb863;
+}
+.Home----home .latest .latest-content .cards .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 1137px) {
+  .Home----home .home___hero .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .Home----home .home___hero .cards .home-hero-img {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 888px) {
+  .Home----home .home___hero .cards {
+    padding-top: 0;
+  }
+  .Home----home .home___hero .cards .text-card {
+    padding-bottom: 70px;
+  }
+  .Home----home .home___hero .cards .card h1 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .Home----home .home___hero .cards .card p {
+    font-size: 16px;
+  }
+  .Home----home .sector {
+    padding-top: 75px;
+  }
+  .Home----home .sector .sector-content h2 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .Home----home .latest .latest-content h6 {
+    font-size: 32px;
+  }
 }
 
 .blog-inner section:first-child {
